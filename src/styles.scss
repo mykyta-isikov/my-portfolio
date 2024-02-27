@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --theme-background: #fff1e7;
+  --theme-background-secondary: #ffe2c0;
+  --theme-primary: #f58f0a;
+  --theme-secondary: #f8b65e;
+  --theme-accent: #fbd29d;
+  --theme-text: #000000;
+  --theme-shadow: rgba(0, 0, 0, 0.5)
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'sans-serif', Calibri;
+}

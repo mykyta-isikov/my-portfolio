@@ -1,6 +1,15 @@
 # MyPortfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.1.
+Can be described as a personal developers' website or a portfolio, which additionally will host personal blog upon completion. It aims to be useful for both developers and recruiters who are interested in getting to know me. Currently, this project is in active development.
+
+It was built using Angular standalone components and standard Angular CLI commands.
+
+## Roadmap
+- implement 'About' page with info and responsive markup.
+- implement 'Blog' page with blog posts, tags and search functionality.
+- implement 'Blog post' page for individual posts browsing.
+- set up admin authentication and 'Admin panel' page.
+- deploy app.
 
 ## Development server
 
@@ -21,6 +30,14 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 ## Running end-to-end tests
 
 Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+
+## Commit and release
+
+App uses commitizen and standard-version packages to enforce standard commit structure and automatically generate changelog.
+
+Run `npm run commit` to initiate commit.
+
+Run `npm run release` with necessary flags to release a new version.
 
 ## Further help
 
