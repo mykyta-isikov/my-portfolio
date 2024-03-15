@@ -1,0 +1,36 @@
+/* _____ VARIABLES _____ */
+
+// Generic
+// ==========================================================================
+
+$default-borderRadius: 5;
+$screenWidth: (
+  s: 576px,
+  m: 768px,
+  l: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+$containerWidth: (
+  s: 540px,
+  m: 720px,
+  l: 960px,
+  xl: 1140px,
+  xxl: 1320px
+);
+
+
+// Colors
+// ==========================================================================
+
+$color-light-text: #001a0d;
+$color-light-background: #f7fdfa;
+$color-light-primary: #39d06e;
+$color-light-secondary: #8ba6e4;
+$color-light-accent: #7b6adc;
+
+$color-dark-text: #e5fff2;
+$color-dark-background: #020805;
+$color-dark-primary: #2fc664;
+$color-dark-secondary: #1b3674;
+$color-dark-accent: #342395;

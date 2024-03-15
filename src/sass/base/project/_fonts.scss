@@ -1,0 +1,13 @@
+@include importOnce('project-fonts') {
+
+  /* _____ FONTS _____ */
+
+  @include importFont('ubuntu', 'Ubuntu-Regular');
+  @include importFont('montserrat', 'Montserrat-Regular');
+  @include importFont('montserrat-bold', 'Montserrat-Bold', $isBold: true);
+  @include importFont('ubuntumono-bold', 'UbuntuMono-Bold', $isBold: true);
+  //@include importFont('titillium', 'titilliumweb-bold-webfont', 'titillium_webbold', $isBold: true);
+  //@include importFont('robotoSlab', 'robotoslab-regular-webfont', 'roboto_slabregular');
+  //@include importFont('robotoSlab', 'robotoslab-bold-webfont', 'roboto_slabbold', $isBold: true);
+
+}

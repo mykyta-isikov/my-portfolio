@@ -1,0 +1,42 @@
+@include importOnce('project-globals') {
+
+  /* _____ GLOBAL DEFAULTS _____ */
+  :root {
+    color-scheme: light dark;
+  }
+
+  /* Light and dark themes */
+  :root {
+    $color-text: $color-light-text;
+    $color-background: $color-light-background;
+    $color-primary: $color-light-primary;
+    $color-secondary: $color-light-secondary;
+    $color-accent: $color-light-accent;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      $color-text: $color-dark-text;
+      $color-background: $color-dark-background;
+      $color-primary: $color-dark-primary;
+      $color-secondary: $color-dark-secondary;
+      $color-accent: $color-dark-accent;
+    }
+  }
+
+
+  *,
+  :before,
+  :after {
+    box-sizing: border-box;
+  }
+
+  html {
+    width: 100%;
+    height: 100%;
+    font-size: 100%;
+    font-family: 'montserrat', sans-serif;
+  }
+
+
+}

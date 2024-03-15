@@ -2,7 +2,7 @@
 
 Can be described as a personal developers' website or a portfolio, which additionally will host personal blog upon completion. It aims to be useful for both developers and recruiters who are interested in getting to know me. Currently, this project is in active development.
 
-It was built using Angular standalone components and standard Angular CLI commands.
+It was built using Angular standalone components and standard Angular CLI commands. Styling follows [DoCSSa](https://mlarcher.github.io/docssa/#about) methodology.
 
 ## Roadmap
 - implement 'About' page with info and responsive markup.

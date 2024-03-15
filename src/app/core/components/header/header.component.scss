@@ -1,5 +1,6 @@
 
 .navbar {
+  padding: 10px;
   display: flex;
   align-items: center;
   gap: 1em;
@@ -7,5 +8,4 @@
 
 .header {
   background-color: var(--theme-background-secondary);
-  padding: 10px 20px;
 }
