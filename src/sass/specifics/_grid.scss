@@ -1,0 +1,47 @@
+.grid-container {
+  @each $name, $size in mapReverse($grid-breakpoints) {
+    @media (max-width: $size) {
+      max-width: map-get($containerWidth, $name);
+    }
+  }
+  
+  @include make-container();
+  width: map-get($containerWidth, xxl);
+}
+
+.grid-row {
+  @include make-row();
+}
+
+.grid-col {
+  @include make-col-ready();
+}
+
+
+// TODO: to be refactored
+.hero-section {
+  background-color: $color-accent;
+  @include make-col(12);
+
+  @include media-breakpoint-up(lg) {
+    @include make-col(6);
+  }
+}
+
+@for $i from 1 through $grid-columns {
+  .grid-col-#{$i} {
+    @extend .grid-col;
+    @include make-col($i);
+  }
+
+  .grid-offset-#{$i} {
+    @include make-col-offset($i);
+  }
+}
+
+@for $i from 1 through 10 {
+  $modifier: $i*10;
+  .vh-#{$modifier} {
+    min-height: calc(100vh * $modifier / 100);
+  }
+}
