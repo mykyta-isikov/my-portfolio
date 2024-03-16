@@ -3,13 +3,19 @@
   /* _____ GLOBAL DEFAULTS _____ */
   :root {
     color-scheme: light dark;
-    font-family: 'montserrat', sans-serif;
   }
 
   *,
   :before,
   :after {
     box-sizing: border-box;
+  }
+
+  html {
+    font-family: 'montserrat', sans-serif;
+
+    @include theme('background-color', 'background');
+    @include theme('color', 'text');
   }
 
 }

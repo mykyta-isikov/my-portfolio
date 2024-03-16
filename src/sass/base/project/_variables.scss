@@ -33,18 +33,21 @@ $default-borderRadius: 5;
 // Colors
 // ==========================================================================
 
-/* Light theme palette */
-$color-text: #001a0d;
-$color-background: #f7fdfa;
-$color-primary: #39d06e;
-$color-secondary: #8ba6e4;
-$color-accent: #7b6adc;
-
-/* Dark theme palette */
-@media (prefers-color-scheme: dark) {
-  $color-text: #e5fff2;
-  $color-background: #020805;
-  $color-primary: #2fc664;
-  $color-secondary: #1b3674;
-  $color-accent: #342395;
-}
+$light-theme: 'light';
+$dark-theme: 'dark';
+$themes: (
+  light: (
+    text: #001a0d,
+    background: #f7fdfa,
+    primary: #39d06e,
+    secondary: #8ba6e4,
+    accent: #7b6adc,
+  ),
+  dark: (
+    text: #e5fff2,
+    background: #020805,
+    primary: #2fc664,
+    secondary: #1b3674,
+    accent: #342395,
+  ),
+);
