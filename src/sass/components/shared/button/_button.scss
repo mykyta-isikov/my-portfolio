@@ -2,12 +2,20 @@ $btn-height: 32px;
 
 .btn {
   @include theme('background-color', 'primary');
+  @include svgWithTextContainer();
+
+  @extend .content-center;
+  @extend .font-mons-medium;
+
+  gap: 0.5rem;
   border: none;
   padding: 0 calc($btn-height / 2);
   height: $btn-height;
-  border-radius: $btn-height / 2;
+  border-radius: calc($btn-height / 2);
+  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
 
   &--gradient {
-    @include gradient(135deg, 'primary', 'accent')
+    @include gradient(135deg, 'primary', 'accent');
+    @include theme('color', 'background');
   }
 }

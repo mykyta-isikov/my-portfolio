@@ -1,1 +1,5 @@
 // project specific mixins
+@mixin svgWithTextContainer($gap: $default-svg-text-gap) {
+  display: flex;
+  gap: $gap;
+}

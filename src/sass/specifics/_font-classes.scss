@@ -2,8 +2,8 @@
   @include fontStyle('montserrat', sans-serif, $baseFontSize);
 }
 
-.font-mons-bold {
-  @include fontStyle('montserrat-bold', sans-serif, $baseFontSize);
+.font-mons-medium {
+  @include fontStyle('montserrat-medium', sans-serif, $baseFontSize);
 }
 
 .font-greatHeading {

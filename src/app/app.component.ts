@@ -10,5 +10,5 @@ import { HeaderComponent } from './core/components/header/header.component';
   styles: ''
 })
 export class AppComponent {
-  title = 'Isikov';
+  title = 'MyPortfolio';
 }

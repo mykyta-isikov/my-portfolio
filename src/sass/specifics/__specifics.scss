@@ -21,6 +21,10 @@
   @extend .content-center-y;
 }
 
+.svg-with-text-container {
+  @include svgWithTextContainer();
+}
+
 @for $i from 1 through 10 {
   $modifier: $i*10;
   .vh-#{$modifier} {

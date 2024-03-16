@@ -1,20 +1,30 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
-import { NgClass } from '@angular/common';
+import { NgClass, NgIf } from '@angular/common';
+import { SvgIconComponent } from 'angular-svg-icon';
 
 @Component({
   selector: 'app-button',
   standalone: true,
   imports: [
-    NgClass
+    NgClass,
+    SvgIconComponent,
+    NgIf
   ],
   template: `
     <button
+      class="btn content-center"
       [ngClass]="{
-        'btn': true,
         'btn--gradient': btnType === 'gradient'
       }"
     >
-      {{btnText}}
+      <span>{{btnText}}</span>
+      <svg-icon
+        *ngIf="btnSvgName"
+        class="content-center"
+        [src]="'assets/icons/' + btnSvgName + '.svg'"
+        [stretch]="false"
+        [svgStyle]="{'width.px': 16, 'height.px': 16}"
+      ></svg-icon>
     </button>
   `,
   styles: '',
@@ -23,4 +33,5 @@ import { NgClass } from '@angular/common';
 export class ButtonComponent {
   @Input() btnText!: string;
   @Input() btnType: 'regular' | 'gradient' = 'regular';
+  @Input() btnSvgName!: string;
 }
