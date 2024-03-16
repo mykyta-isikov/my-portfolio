@@ -1,0 +1,19 @@
+.font-mons-regular {
+  @include fontStyle('montserrat', sans-serif, $baseFontSize);
+}
+
+.font-mons-bold {
+  @include fontStyle('montserrat-bold', sans-serif, $baseFontSize);
+}
+
+.font-greatHeading {
+  @include fontStyle('ubuntumono-bold', sans-serif, $greatHeadingFontSize);
+}
+
+.font-heading {
+  @include fontStyle('ubuntu', sans-serif, $headingFontSize);
+}
+
+.font-subHeading {
+  @include fontStyle('ubuntu', sans-serif, $subHeadingFontSize);
+}

@@ -26,6 +26,11 @@
 
 }
 
+@mixin fontStyle($family-name, $generic-family, $font-size: $baseFontSize) {
+  font-family: $family-name, $generic-family;
+  font-size: $font-size;
+}
+
 
 // Units
 // ==========================================================================

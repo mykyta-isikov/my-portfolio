@@ -3,5 +3,31 @@
 
 // import contextual entities
 @import 'grid';
+@import 'font-classes';
 
 // miscellaneous rules
+.content-center-x {
+  display: flex;
+  align-items: center;
+}
+
+.content-center-y {
+  display: flex;
+  align-items: center;
+}
+
+.content-center {
+  @extend .content-center-x;
+  @extend .content-center-y;
+}
+
+@for $i from 1 through 10 {
+  $modifier: $i*10;
+  .vh-#{$modifier} {
+    min-height: calc(100vh * $modifier / 100);
+  }
+
+  .w-#{$modifier} {
+    width: calc($modifier * 1%);
+  }
+}
