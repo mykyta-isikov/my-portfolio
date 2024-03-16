@@ -1,0 +1,13 @@
+$btn-height: 32px;
+
+.btn {
+  @include theme('background-color', 'primary');
+  border: none;
+  padding: 0 calc($btn-height / 2);
+  height: $btn-height;
+  border-radius: $btn-height / 2;
+
+  &--gradient {
+    @include gradient(135deg, 'primary', 'accent')
+  }
+}

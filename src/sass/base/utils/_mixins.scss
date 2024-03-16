@@ -60,12 +60,24 @@
 // Helpers
 // ==========================================================================
 
-// Applies theme color depending on provided palette.
+// Applies theme color to a property depending on provided palette. ONLY for theme() mixin.
 @mixin themeProperty($theme, $property, $color, $additionalPropertiesPositionIsFront, $additionalProperties) {
   @if $additionalPropertiesPositionIsFront {
     #{$property}: unquote($additionalProperties + ' ' + map-get($theme, $color));
   } @else {
     #{$property}: unquote(map-get($theme, $color) + ' ' + $additionalProperties);
+  }
+}
+
+// Applies "background: linear-gradient(...)" with two colors
+@mixin gradient($angle, $color1, $color2) {
+  $light: map-get($themes, $light-theme);
+  $dark: map-get($themes, $dark-theme);
+
+  background: unquote('linear-gradient(#{$angle}, #{map-get($light, $color1)}, #{map-get($light, $color2)})');
+
+  @media (prefers-color-scheme: dark) {
+    background: unquote('linear-gradient(#{$angle}, #{map-get($dark, $color1)}, #{map-get($dark, $color2)})');
   }
 }
 
