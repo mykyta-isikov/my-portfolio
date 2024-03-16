@@ -1,0 +1,25 @@
+.lang-card {
+  @include gradient(135deg, 'primary', 'accent');
+  @include theme('border', 'secondary', true, '1px solid');
+  padding: 1rem;
+  width: 200px;
+  aspect-ratio: 5/7;
+  border-radius: 1em;
+
+  &__wrapper {
+
+  }
+  &__heading {
+    text-align: center;
+  }
+  &__content {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+  &__content-item {
+    &:nth-child(2n) {
+      text-align: right;
+    }
+  }
+}

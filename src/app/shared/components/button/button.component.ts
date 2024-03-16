@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from '@angular/core';
 import { NgClass, NgIf } from '@angular/common';
 import { SvgIconComponent } from 'angular-svg-icon';
 
@@ -12,6 +12,7 @@ import { SvgIconComponent } from 'angular-svg-icon';
   ],
   template: `
     <button
+      (click)="clickHandler()"
       class="btn content-center"
       [ngClass]="{
         'btn--gradient': btnType === 'gradient'
@@ -34,4 +35,9 @@ export class ButtonComponent {
   @Input() btnText!: string;
   @Input() btnType: 'regular' | 'gradient' = 'regular';
   @Input() btnSvgName!: string;
+  @Output() btnClick = new EventEmitter<void>();
+
+  clickHandler = () => {
+    this.btnClick.emit();
+  };
 }
