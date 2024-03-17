@@ -1,22 +1,51 @@
 .lang-card {
   @include gradient(135deg, 'primary', 'accent');
-  @include theme('border', 'secondary', true, '1px solid');
-  padding: 1rem;
+  @include theme('color', 'background');
+  padding: 1.5rem;
   width: 200px;
   aspect-ratio: 5/7;
   border-radius: 1em;
+  transform: rotateX(0) rotateY(0.1turn);
+  transform-style: preserve-3d;
+  position: relative;
 
   &__wrapper {
-
+    perspective: 500px;
   }
+
+  &__back {
+    content: '';
+    position: absolute;
+    border-radius: 1em;
+    top: 0;
+    left: 0;
+    transform: translateZ(-10px);
+    width: 200px;
+    aspect-ratio: 5/7;
+    @include theme('background-color', 'secondary');
+  }
+
+  &__front {
+    transform-style: preserve-3d;
+    transform: translateZ(10px);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
   &__heading {
     text-align: center;
   }
+
   &__content {
+    margin-bottom: 1rem;
     display: grid;
     grid-auto-rows: 1fr;
     grid-template-columns: 1fr 1fr;
+    row-gap: 0.7rem;
   }
+
   &__content-item {
     &:nth-child(2n) {
       text-align: right;
