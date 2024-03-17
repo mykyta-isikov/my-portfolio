@@ -23,6 +23,7 @@
 
 .svg-with-text-container {
   @include svgWithTextContainer();
+  @extend .content-center-y;
 }
 
 @for $i from 1 through 10 {

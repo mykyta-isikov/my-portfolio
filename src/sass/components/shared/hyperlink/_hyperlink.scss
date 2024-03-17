@@ -1,0 +1,12 @@
+.hyperlink {
+  text-decoration: none;
+  @include theme('color', 'text');
+  @extend .font-mons-medium;
+
+  &:visited {
+    @include theme('color', 'text');
+  }
+  &--highlight {
+    @include theme('border-bottom', 'text', true, '2px dashed');
+  }
+}
