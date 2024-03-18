@@ -36,3 +36,19 @@
     width: calc($modifier * 1%);
   }
 }
+
+.hide-on-mobile {
+  display: none;
+
+  @include media-breakpoint-up(lg) {
+    display: block;
+  }
+}
+
+.show-on-mobile {
+  display: block;
+
+  @include media-breakpoint-up(lg) {
+    display: none;
+  }
+}

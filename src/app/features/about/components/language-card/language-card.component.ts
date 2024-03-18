@@ -40,6 +40,7 @@ export class LanguageCardComponent implements AfterViewInit {
     const winWidth = window.innerWidth;
 
     window.onmousemove = (event) => {
+      if (!window.matchMedia('(pointer: fine)').matches) return;
       const posX = event.clientX;
       const posY = event.clientY;
 
@@ -47,13 +48,13 @@ export class LanguageCardComponent implements AfterViewInit {
       const turnY = ((posX/winWidth) - 0.5) / 10 - 0.05;
 
       const newTransform = `rotateX(${turnX}turn) rotateY(${turnY}turn)`;
-
       this.cardRef.nativeElement.style.transition = 'none';
       this.cardRef.nativeElement.style.transform = newTransform;
 
     };
 
     window.onmouseout = () => {
+      if (!window.matchMedia('(pointer: fine)').matches) return;
       this.cardRef.nativeElement.style.transform = 'rotateX(0turn) rotateY(-0.05turn)';
       this.cardRef.nativeElement.style.transition = 'transform 300ms ease-out';
     };

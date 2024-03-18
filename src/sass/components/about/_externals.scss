@@ -1,0 +1,46 @@
+.externals {
+  @include make-row();
+
+  &__wrapper {
+    height: 100vh;
+
+    @include media-breakpoint-up(lg) {
+      max-height: 100vh;
+    }
+
+  }
+
+  &__sections {
+    @include mobile-responsive-col();
+
+    @include media-breakpoint-up(md) {
+      @include make-col(8);
+      @include make-col-offset(2);
+    }
+    @include media-breakpoint-up(lg) {
+      @include make-col(5);
+      @include make-col-offset(0);
+    }
+
+    &:nth-child(2) {
+      @include media-breakpoint-up(lg) {
+        @include make-col-offset(2);
+      }
+    }
+  }
+
+  &__section {
+    margin-bottom: 1rem;
+    overflow: auto;
+  }
+}
+
+.links-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  @include media-breakpoint-up(md) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

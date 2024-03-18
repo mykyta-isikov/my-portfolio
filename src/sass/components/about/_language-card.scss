@@ -5,12 +5,16 @@
   width: 200px;
   aspect-ratio: 5/7;
   border-radius: 1em;
-  transform: rotateX(0) rotateY(0.1turn);
   transform-style: preserve-3d;
   position: relative;
 
+  /* Allow animation only on mouse */
+  @media (pointer:fine) {
+    transform: rotateX(0) rotateY(0.1turn);
+  }
+
   &__wrapper {
-    perspective: 500px;
+    //perspective: 500px;
   }
 
   &__back {

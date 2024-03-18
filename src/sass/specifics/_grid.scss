@@ -17,16 +17,6 @@
   @include make-col-ready();
 }
 
-
-// TODO: to be refactored
-.hero-section {
-  @include make-col(12);
-
-  @include media-breakpoint-up(lg) {
-    @include make-col(6);
-  }
-}
-
 @for $i from 1 through $grid-columns {
   .grid-col-#{$i} {
     @extend .grid-col;
@@ -35,5 +25,17 @@
 
   .grid-offset-#{$i} {
     @include make-col-offset($i);
+  }
+
+  .grid-col.grid-col-lg-#{$i} {
+    @include media-breakpoint-up(lg) {
+      @include make-col($i);
+    }
+  }
+
+  .grid-col.grid-offset-lg-#{$i} {
+    @include media-breakpoint-up(lg) {
+      @include make-col-offset($i);
+    }
   }
 }
