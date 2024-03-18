@@ -2,12 +2,11 @@
   @include make-row();
 
   &__wrapper {
-    min-height: 100vh;
+    margin-bottom: 3rem;
 
     @include media-breakpoint-up(lg) {
       max-height: 100vh;
     }
-
   }
 
   &__about-me,

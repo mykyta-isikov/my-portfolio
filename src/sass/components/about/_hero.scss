@@ -3,6 +3,7 @@
   min-height: 100vh;
   flex-direction: column;
   justify-content: space-around;
+  padding-bottom: 3rem;
 
   @include media-breakpoint-up(lg) {
     max-height: 100vh;
