@@ -12,6 +12,7 @@ $grid-columns: 12 !default;
 
 /* Width breakpoints */
 $grid-breakpoints: (
+  xs: 0,
   sm: 576px,
   md: 768px,
   lg: 992px,
@@ -19,11 +20,11 @@ $grid-breakpoints: (
   xxl: 1400px
 );
 $containerWidth: (
-  sm: 100%,
-  md: 540px,
-  lg: 720px,
-  xl: 960px,
-  xxl: 1140px
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
 );
 
 /* Misc */

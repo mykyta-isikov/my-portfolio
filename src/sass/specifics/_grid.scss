@@ -1,12 +1,5 @@
 .grid-container {
-  @each $name, $size in mapReverse($grid-breakpoints) {
-    @media (max-width: $size) {
-      max-width: map-get($containerWidth, $name);
-    }
-  }
-
   @include make-container();
-  width: map-get($containerWidth, xxl);
 }
 
 .grid-row {
