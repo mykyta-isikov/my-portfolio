@@ -7,7 +7,6 @@
     @media (min-width: $size) {
       max-width: map-get($containerWidth, $name);
     }
-    @debug $size, map-get($containerWidth, $name);
 
   }
 }

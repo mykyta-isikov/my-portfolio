@@ -13,6 +13,7 @@
 
   html {
     font-family: 'montserrat', sans-serif;
+    scroll-behavior: smooth;
 
     @include theme('background-color', 'background');
     @include theme('color', 'text');
