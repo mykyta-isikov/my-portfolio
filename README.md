@@ -10,7 +10,7 @@ It was built using Angular standalone components and standard Angular CLI comman
 - implement 'Blog' page with blog posts, tags and search functionality.
 - implement 'Blog post' page for individual posts browsing.
 - set up admin authentication and 'Admin panel' page.
-- deploy app.
+- ~~deploy app.~~
 
 ## Development server
 
