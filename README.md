@@ -5,7 +5,8 @@ Can be described as a personal developers' website or a portfolio, which additio
 It was built using Angular standalone components and standard Angular CLI commands. Styling follows [DoCSSa](https://mlarcher.github.io/docssa/#about) methodology.
 
 ## Roadmap
-- implement 'About' page with info and responsive markup.
+- ~~implement 'About' page with info and responsive markup.~~
+- add public projects showcase.
 - implement 'Blog' page with blog posts, tags and search functionality.
 - implement 'Blog post' page for individual posts browsing.
 - set up admin authentication and 'Admin panel' page.
