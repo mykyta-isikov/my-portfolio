@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "my-portfolio-isikov": {
+      "hosting": {
+        "my-portfolio": [
+          "my-portfolio-isikov"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "my-portfolio-isikov"
+  }
+}

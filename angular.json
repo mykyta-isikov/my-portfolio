@@ -108,6 +108,23 @@
               "src/**/*.html"
             ]
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "version": 2
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "my-portfolio:build:production",
+              "serveTarget": "my-portfolio:serve:production"
+            },
+            "development": {
+              "buildTarget": "my-portfolio:build:development",
+              "serveTarget": "my-portfolio:serve:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }
