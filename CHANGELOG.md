@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.1](https://github.com/mykyta-isikov/my-portfolio/compare/v0.1.0...v0.1.1) (2024-04-07)
+
+
+### Features
+
+* **favicon.ico:** add custom favicon ([b08c763](https://github.com/mykyta-isikov/my-portfolio/commit/b08c763ba8e2f1ad6796a9ed3c083def174ec881))
+
 ## [0.1.0](https://github.com/mykyta-isikov/my-portfolio/compare/v0.0.0...v0.1.0) (2024-03-19)
 
 
